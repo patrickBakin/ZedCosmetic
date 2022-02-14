@@ -1,2 +1,2 @@
 # ZedCosmetic
-Originally By Asapi. I made it functional on server 
+Originally By Asapi. I made it functional on the server 
