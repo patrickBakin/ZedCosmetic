@@ -37,13 +37,14 @@ var ZCRep ZCR;
 event PostBeginPlay()
 {
 	super.PostBeginPlay();
-    ZCR = spawn(class'ZCRep');
-    ZCR.ZCM=self;
-    ZCR.HatType=HatType;
+    	ZCR = spawn(class'ZCRep');
+    	ZCR.ZCM=self;
+    
 	SetupInteraction();
 	SetupConfig();
 
 	SaveConfig();
+	ZCR.HatType=HatType;
 	//AddMesh();
 
 	//AddMesh();
@@ -72,7 +73,7 @@ function SetupConfig()
 	}
 }
 
-//	Not functional now (I guess I should learn more)
+// it functioning now i guess...
 function Mutate(string MutateString, PlayerController Sender)
 {
 	local array<string> StringParts;
@@ -90,7 +91,7 @@ function Mutate(string MutateString, PlayerController Sender)
 	super.Mutate(MutateString, Sender);
 }
 
-//	main function
+
 
 
 /*function bool CheckRelevance(Actor Other)
